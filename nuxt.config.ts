@@ -44,5 +44,10 @@ export default defineNuxtConfig({
         ],
       },
     ],
+    'floating-vue/nuxt',
   ],
+
+  css: [
+    '@/assets/styles/app.scss',
+  ]
 })

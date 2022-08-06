@@ -1,7 +1,6 @@
 {
   "private": true,
   "version": "1.0.0",
-
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,6 +8,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@felix_berlin/sassy-scss": "^1.7.4",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.3.1",
+    "floating-vue": "^2.0.0-beta.19",
     "nuxt-graphql-client": "^0.1.9"
   }
 }
