@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     // Keys within public, will be also exposed to the client-side
     public: {
       apiBase: '',
+      GQL_HOST: '',
     }
   },
 
@@ -25,4 +26,23 @@ export default defineNuxtConfig({
       routes: []
     }
   },
+
+  modules: [
+    '@vueuse/nuxt',
+    'nuxt-graphql-client'
+  ],
+
+  buildModules: [
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: [
+          // automatically imports `usePinia()`
+          'defineStore',
+          // automatically imports `usePinia()` as `usePiniaStore()`
+          ['defineStore', 'definePiniaStore'],
+        ],
+      },
+    ],
+  ],
 })
