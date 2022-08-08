@@ -2,6 +2,10 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  alias: {
+    'butler': './node_modules/@felix_berlin/sass-butler/'
+  },
+
   typescript: {
     shim: false
   },
